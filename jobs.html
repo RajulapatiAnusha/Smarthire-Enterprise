@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jobs - SmartHire Enterprise</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>SmartHire</h2>
+
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="jobs.html" class="active">Jobs</a></li>
+            <li><a href="candidates.html">Candidates</a></li>
+            <li><a href="interviews.html">Interviews</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <div class="jobs-header">
+            <h2>Job Management</h2>
+            <label for="jobModal" class="add-job-btn">+ Add New Job</label>
+<input type="checkbox" id="jobModal" class="modal-toggle">
+
+<div class="modal">
+    <div class="modal-content">
+        <h3>Add New Job</h3>
+
+        <input type="text" placeholder="Job Title">
+        <input type="text" placeholder="Department">
+        
+        <select>
+            <option>Status</option>
+            <option>Open</option>
+            <option>Closed</option>
+            <option>Draft</option>
+        </select>
+
+        <label for="jobModal" class="add-job-btn">Save Job</label>
+    </div>
+</div>
+        </div>
+
+        <div class="jobs-grid">
+
+            <div class="job-card">
+                <h3>Frontend Developer</h3>
+                <p>Department: Engineering</p>
+                <span class="status-tag status-open">Open</span>
+                <div class="job-footer">
+                    Applicants: 34
+                </div>
+            </div>
+
+            <div class="job-card">
+                <h3>UI/UX Designer</h3>
+                <p>Department: Product Design</p>
+                <span class="status-tag status-open">Open</span>
+                <div class="job-footer">
+                    Applicants: 21
+                </div>
+            </div>
+
+            <div class="job-card">
+                <h3>Backend Developer</h3>
+                <p>Department: Engineering</p>
+                <span class="status-tag status-closed">Closed</span>
+                <div class="job-footer">
+                    Applicants: 56
+                </div>
+            </div>
+
+            <div class="job-card">
+                <h3>HR Executive</h3>
+                <p>Department: Human Resources</p>
+                <span class="status-tag status-draft">Draft</span>
+                <div class="job-footer">
+                    Applicants: 0
+                </div>
+            </div>
+
+            <div class="job-card">
+                <h3>Marketing Manager</h3>
+                <p>Department: Marketing</p>
+                <span class="status-tag status-open">Open</span>
+                <div class="job-footer">
+                    Applicants: 18
+                </div>
+            </div>
+
+            <div class="job-card">
+                <h3>Data Analyst</h3>
+                <p>Department: Analytics</p>
+                <span class="status-tag status-open">Open</span>
+                <div class="job-footer">
+                    Applicants: 27
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
